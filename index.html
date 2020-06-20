@@ -22,55 +22,75 @@
                 </div>
             </div>
         </div>
-        <div class="about">
-            <div class="about-text">
-                <h2>About me</h2>
+        <div class="title">
+            <div class="title-wrap">
+                <div class="title-text">
+                    <div>Joe Cai</div>
+                </div>
+                <div class="sub-text">
+                    <p>Portfolio</p>
+                </div>
             </div>
         </div>
         <div class="projects" id="projects">
-            <div class="project-items">
-                <div class="project-item">
-                    <div class="project-img" style="background-image:url(images/img-01.jpg)">
+            <div class="project-title">
+                <div class="project-text">
+                    Projects
+                </div>
+            </div>
+            <div class="project-wrap">
+                <div class="project-items">
+                    <div class="project-item">
+                        <div class="project-img" style="background-image:url(images/img-01.jpg)">
+                        </div>
+                        <div class="img-text">
+                            <div class="desc">Hello</div>
+                        </div>
                     </div>
-                    <div class="img-text">
-                        <div class="desc">Hello</div>
+                    <div class="project-item">
+                        <div class="project-img" style="background-image:url(images/img-02.jpg)">
+                        </div>
+                        <div class="img-text">
+                            <div class="desc">Hello</div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img" style="background-image:url(images/img-03.jpg)">
+                        </div>
+                        <div class="img-text">
+                            <div class="desc">Hello</div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img" style="background-image:url(images/img-04.jpg)">
+                        </div>
+                        <div class="img-text">
+                            <div class="desc">Hello</div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img" style="background-image:url(images/img-05.jpg)">
+                        </div>
+                        <div class="img-text">
+                            <div class="desc">Hello</div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-img" style="background-image:url(images/img-06.jpg)">
+                        </div>
+                        <div class="img-text">
+                            <div class="desc">Hello</div>
+                        </div>
                     </div>
                 </div>
-                <div class="project-item">
-                    <div class="project-img" style="background-image:url(images/img-02.jpg)">
-                    </div>
-                    <div class="img-text">
-                        <div class="desc">Hello</div>
-                    </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-wrap">
+                <div class="about-text">
+                    <div>About Me</div>
                 </div>
-                <div class="project-item">
-                    <div class="project-img" style="background-image:url(images/img-03.jpg)">
-                    </div>
-                    <div class="img-text">
-                        <div class="desc">Hello</div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-img" style="background-image:url(images/img-04.jpg)">
-                    </div>
-                    <div class="img-text">
-                        <div class="desc">Hello</div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-img" style="background-image:url(images/img-05.jpg)">
-                    </div>
-                    <div class="img-text">
-                        <div class="desc">Hello</div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-img" style="background-image:url(images/img-06.jpg)">
-                    </div>
-                    <div class="img-text">
-                        <div class="desc">Hello</div>
-                    </div>
-                </div>
+                <div>Hi im joe.</div>
             </div>
         </div>
     </div>
@@ -79,12 +99,10 @@
     const projects = document.querySelectorAll('.project-item');
     projects.forEach(project => {
         project.addEventListener('mouseover', () => {
-            console.log(project.childNodes);
             project.childNodes[1].classList.add('img-darken');
         })
 
         project.addEventListener('mouseout', () => {
-            console.log(project.childNodes);
             project.childNodes[1].classList.remove('img-darken');
         })
     })

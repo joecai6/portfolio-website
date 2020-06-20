@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 .container {
@@ -32,7 +34,7 @@ body {
 }
 
 .nav-link a {
-    color: lightseagreen;
+    color: aliceblue;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -42,40 +44,61 @@ body {
 }
 
 .nav-link a:hover {
-    color:blueviolet;
+    color:lightsteelblue;
 }
 
-/* About */
-.about {
+/* Header */
+.title {
     display: grid;
     grid-template-columns: 1fr;
     width:100%;
     height: 500px;
-    background-color: rgb(119, 119, 194);
     background-image: url(images/img-07.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.about-text {
+.title-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.title-text {
+    font-size: 50px;
 }
 
 /* Portfolio */
+
+.project-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-text {
+    font-size: 50px;
+}
+
+.project-wrap {
+    width: 85%;
+    margin: auto;
+}
 .project-items {
+    background-color: aliceblue;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project-item {
     position: relative;
+    margin: 0px 10px 20px 10px;
 }
 
 .project-img {
-    height: 350px;
+    height: 300px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -85,15 +108,13 @@ body {
 .img-text {
     position: absolute;
     top: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 55%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
 .img-text .desc {
@@ -110,4 +131,22 @@ body {
 .img-darken {
     transition: 0.5s;
     filter: brightness(20%);
+}
+
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    height: 500px;
+}
+
+.about-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-text {
+    font-size: 50px;
 }
