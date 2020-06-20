@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.navbar > .nav-left > div{
+    margin-right: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link a {
+    color: lightseagreen;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link a:hover {
+    color:blueviolet;
+}
+
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    height: 500px;
+    background-color: rgb(119, 119, 194);
+    background-image: url(images/img-07.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Portfolio */
+.project-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-item {
+    position: relative;
+}
+
+.project-img {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text .desc {
+    transition: 0.7s;
+    font-weight: 600;
+    color:transparent;
+}
+
+.img-text:hover .desc {
+    font-weight: 600;
+    color: lightskyblue;
+}
+
+.img-darken {
+    transition: 0.5s;
+    filter: brightness(20%);
+}
