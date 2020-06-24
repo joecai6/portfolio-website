@@ -14,12 +14,12 @@ About me div
 Footer with contact information
     - email, linkedin, github (can also put in nav)
     - add logos to link to profile page
-    
+
 Add projects
     1. Pop out window whenever a project is clicked
         - info/link
 
-    Modals - fix css on container
+Modals - fix css on container
 
 Extras:
  - Better transitions
