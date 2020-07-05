@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     background-color: black;
     color: white;
 }
@@ -13,8 +13,16 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    position: absolute;
+    box-sizing:border-box;
     padding: 20px;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 .nav-left {
@@ -22,6 +30,16 @@ body {
 }
 
 .navbar > .nav-left > div{
+    margin-right: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.navbar > .nav-right > div{
     margin-right: 20px;
     font-size: 1em;
     text-transform: uppercase;
@@ -50,10 +68,12 @@ body {
 /* Header */
 .title {
     display: grid;
+    position: relative;
+    z-index: 0;
     grid-template-columns: 1fr;
     width:100%;
-    height: 500px;
-    background-image: url(images/img-07.jpg);
+    height: 100vh;
+    background-image: url(images/img-10.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +92,11 @@ body {
 
 /* Portfolio */
 
+.projects {
+    height: 120vh;
+    background-color: rgb(13, 28, 43);
+}
+
 .project-title {
     width: 100%;
     display: flex;
@@ -85,9 +110,9 @@ body {
 .project-wrap {
     width: 85%;
     margin: auto;
+    padding-top: 20px;
 }
 .project-items {
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -180,6 +205,8 @@ body {
 .about {
     display: grid;
     grid-template-columns: 1fr;
+    height: 100vh;
+    background: rgb(0, 12, 32);
 }
 
 .about-wrap {
@@ -217,3 +244,5 @@ footer {
 .info-item {
     margin: 10px;
 }
+
+/* ANIME */
