@@ -216,6 +216,7 @@ body {
     padding-top: 2em;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .about-text {
@@ -225,19 +226,37 @@ body {
 .about-content {
     display: flex;
     width:100%;
-    height: 500px;
     justify-content: center;
-    align-items: center;
 }
 
 .about-left {
-    flex: 50%
+    flex: 50%;
 }
 
 .about-right {
     flex:50%
 }
 
+.about-sub {
+    font-size: 28px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.about-desc1 {
+    font-size: 22px;
+    margin-top: 1em;
+}
+
+.about-desc2 {
+    margin: 1rem auto;
+    font-size: 18px;
+    width: 70%;
+}
+
+.circle-img {
+    border-radius: 50%;
+}
 /* Footer */
 footer {
     display: flex;
@@ -246,6 +265,7 @@ footer {
 
 .info-item {
     margin: 10px;
+    display: flex;
 }
 
 /* ANIME */
