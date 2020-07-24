@@ -15,7 +15,7 @@ body {
     display: flex;
     position: absolute;
     box-sizing:border-box;
-    padding: 20px;
+    padding: 18px;
     z-index: 1;
     justify-content: space-between;
     background-color: black;
@@ -93,13 +93,14 @@ body {
 /* Portfolio */
 
 .projects {
-    height: 120vh;
+    height: 140vh;
     background-color: rgb(13, 28, 43);
 }
 
 .project-title {
     width: 100%;
     display: flex;
+    padding-top: 2em;
     justify-content: center;
 }
 
@@ -119,7 +120,7 @@ body {
 
 .project-item {
     position: relative;
-    margin: 0px 10px 20px 10px;
+    margin: 0px 10px 30px 30px;
 }
 
 .project-img {
@@ -153,7 +154,8 @@ body {
 
 .img-text:hover .desc {
     font-weight: 600;
-    color: lightskyblue;
+    font-size: 24px;
+    color: rgb(221, 242, 255);
 }
 
 .img-darken {
@@ -211,6 +213,7 @@ body {
 
 .about-wrap {
     display: flex;
+    padding-top: 2em;
     align-items: center;
     flex-direction: column;
 }
