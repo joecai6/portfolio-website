@@ -1,5 +1,7 @@
 # Joe Portfilio
 
+https://joecai6.github.io/portfolio-website/
+
 TO-Dos
 MVP 
 
